@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QLz-F9-ya7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="Q7w-n6-kl3">
+            <objects>
+                <viewController id="QLz-F9-ya7" customClass="MainViewController" customModule="ImageStorage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bzr-se-EdA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c49-GG-dg5">
+                                <rect key="frame" x="24" y="811" width="366" height="61"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="c49-GG-dg5" secondAttribute="height" multiplier="6:1" id="HlU-h6-2jK"/>
+                                </constraints>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="Upload Image"/>
+                                <connections>
+                                    <action selector="uploadImageButtonPressed:" destination="QLz-F9-ya7" eventType="touchUpInside" id="y5J-OP-utb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="c49-GG-dg5" secondAttribute="bottom" constant="24" id="LsR-Rh-oiQ"/>
+                            <constraint firstItem="c49-GG-dg5" firstAttribute="leading" secondItem="HUW-5d-OjU" secondAttribute="leading" constant="24" id="drd-tq-7ZD"/>
+                            <constraint firstItem="HUW-5d-OjU" firstAttribute="trailing" secondItem="c49-GG-dg5" secondAttribute="trailing" constant="24" id="sNc-3v-JQD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HUW-5d-OjU"/>
+                    </view>
+                    <connections>
+                        <outlet property="uploadImageButton" destination="c49-GG-dg5" id="Izn-Ky-zWN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZEf-Yr-g0P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15.942028985507248" y="50.892857142857139"/>
+        </scene>
+    </scenes>
+</document>
